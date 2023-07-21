@@ -22,5 +22,8 @@
   "homepage": "https://github.com/webpanck/shashark#readme",
   "dependencies": {
     "vue": "^2.5.17"
+  },
+  "devDependencies": {
+    "parcel": "^2.9.3"
   }
 }
