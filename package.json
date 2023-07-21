@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/webpanck/shashark#readme",
   "dependencies": {
-    "vue": "^3.3.4"
+    "vue": "^2.5.17"
   }
 }
