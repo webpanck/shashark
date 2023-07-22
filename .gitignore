@@ -1,3 +1,6 @@
 node_modules/
 vcs.xml
 codeStyleConfig.xml
+.parcel-cache/
+dist/
+.cache/
