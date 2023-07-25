@@ -4,3 +4,4 @@ codeStyleConfig.xml
 .parcel-cache/
 dist/
 .cache/
+.idea/
