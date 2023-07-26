@@ -1,6 +1,7 @@
 <template>
   <button class="sh-button" :class="{[`icon-${iconPosition}`]: true}">
     <sh-icon v-if="icon" class="icon" :name="icon" />
+    <sh-icon class="loading" name="loading" />
     <div class="content">
       <slot />
     </div>
@@ -24,6 +25,10 @@
 </script>
 
 <style lang="scss" scoped>
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
   .sh-button {
     font-size: var(--font-size);
     height: var(--button-height);
@@ -60,6 +65,9 @@
       > .content {
         order: 1;
       }
+    }
+    .loading {
+      animation: spin 1s infinite linear;
     }
   }
 </style>
