@@ -1,6 +1,6 @@
 <template>
   <button class="sh-button" :class="{[`icon-${iconPosition}`]: true}">
-    <sh-icon v-if="icon" :name="icon"></sh-icon>
+    <sh-icon v-if="icon" class="icon" :name="icon"></sh-icon>
     <div class="content">
       <slot></slot>
     </div>
@@ -44,7 +44,7 @@
     &:focus {
       outline: none;
     }
-    > .sh-icon {
+    > .icon {
       order: 1;
       margin-right: .2em;
     }
@@ -52,7 +52,7 @@
       order: 2;
     }
     &.icon-right {
-      > .sh-icon {
+      > .icon {
         order: 2;
         margin-right: 0;
         margin-left: .2em;
