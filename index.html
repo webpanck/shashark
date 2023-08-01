@@ -35,7 +35,7 @@
 </head>
 <body>
 <div id="app">
-  <sh-button>
+  <sh-button :loading="loading1" @click="loading1=!loading1">
     按钮
   </sh-button>
   <sh-button icon="settings">

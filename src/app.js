@@ -6,5 +6,8 @@ Vue.component('sh-button', Button)
 Vue.component('sh-icon', Icon)
 
 new Vue({
-  el: '#app'
+  el: '#app',
+  data: {
+    loading1: false
+  }
 })

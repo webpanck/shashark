@@ -1,7 +1,7 @@
 <template>
-  <button class="sh-button" :class="{[`icon-${iconPosition}`]: true}">
-    <sh-icon v-if="icon" class="icon" :name="icon" />
-    <sh-icon class="loading" name="loading" />
+  <button class="sh-button" :class="{[`icon-${iconPosition}`]: true}" @click="$emit('click')">
+    <sh-icon v-if="icon && !loading" class="icon" :name="icon" />
+    <sh-icon class="loading icon" v-if="loading" name="loading" />
     <div class="content">
       <slot />
     </div>
@@ -13,6 +13,10 @@
     // props: ['icon', 'iconPosition']
     props: {
       icon: {},
+      loading: {
+        type: Boolean,
+        default: false
+      },
       iconPosition: {
         type: String,
         default: 'left',
