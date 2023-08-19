@@ -40,6 +40,14 @@
 </head>
 <body>
 <div id="app">
+  <sh-row>
+    <sh-col>1</sh-col>
+    <sh-col>2</sh-col>
+    <sh-col>3</sh-col>
+  </sh-row><sh-row>
+    <sh-col span="2">2</sh-col>
+    <sh-col span="22">22</sh-col>
+  </sh-row>
   <div class="box">
     <sh-input v-model="message"></sh-input>
     <p>{{message}}</p>
