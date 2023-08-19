@@ -48,6 +48,9 @@
   <div class="box">
     <sh-input value="小盘" error="姓名不能小于两个字"></sh-input>
   </div>
+  <div class="box">
+    <sh-input value="小盘" @change="inputChange"></sh-input>
+  </div>
   <div style="margin: 20px;">
     <sh-button :loading="loading1" @click="loading1=!loading1">
       按钮
