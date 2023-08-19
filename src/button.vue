@@ -11,6 +11,7 @@
 <script>
   import Icon from './icon.vue'
   export default {
+    name: 'SharkButton',
     components: {
       'sh-icon': Icon
     },

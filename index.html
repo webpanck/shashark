@@ -32,23 +32,38 @@
       font-size: var(--font-size);
     }
   </style>
+  <style>
+    .box {
+      margin: 20px;
+    }
+  </style>
 </head>
 <body>
 <div id="app">
-  <sh-button :loading="loading1" @click="loading1=!loading1">
-    按钮
-  </sh-button>
-  <sh-button icon="settings">
-    按钮
-  </sh-button>
-  <sh-button icon="settings" icon-position="right">
-    按钮
-  </sh-button>
-  <sh-button-group>
-    <sh-button icon="left">上一页</sh-button>
-    <sh-button>更多</sh-button>
-    <sh-button icon="right" icon-position="right">上一页</sh-button>
-  </sh-button-group>
+  <div class="box">
+    <sh-input value="小盘"></sh-input>
+    <sh-input value="小盘" :disabled="true"></sh-input>
+    <sh-input value="小盘" :readonly="true"></sh-input>
+  </div>
+  <div class="box">
+    <sh-input value="小盘" error="姓名不能小于两个字"></sh-input>
+  </div>
+  <div style="margin: 20px;">
+    <sh-button :loading="loading1" @click="loading1=!loading1">
+      按钮
+    </sh-button>
+    <sh-button icon="settings">
+      按钮
+    </sh-button>
+    <sh-button icon="settings" icon-position="right">
+      按钮
+    </sh-button>
+    <sh-button-group>
+      <sh-button icon="left">上一页</sh-button>
+      <sh-button>更多</sh-button>
+      <sh-button icon="right" icon-position="right">上一页</sh-button>
+    </sh-button-group>
+  </div>
 </div>
 
 <script src="./src/app.js"></script>
