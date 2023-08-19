@@ -12,7 +12,8 @@ Vue.component('sh-input', Input)
 new Vue({
   el: '#app',
   data: {
-    loading1: false
+    loading1: false,
+    message: 'pck'
   },
   methods: {
     inputChange(e) {

@@ -41,6 +41,11 @@
 <body>
 <div id="app">
   <div class="box">
+    <sh-input v-model="message"></sh-input>
+    <p>{{message}}</p>
+    <button @click="message+=1">+1</button>
+  </div>
+  <div class="box">
     <sh-input value="小盘"></sh-input>
     <sh-input value="小盘" :disabled="true"></sh-input>
     <sh-input value="小盘" :readonly="true"></sh-input>
